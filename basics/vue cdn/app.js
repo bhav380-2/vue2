@@ -23,12 +23,14 @@ new Vue({
         subtract:function(dec){
             if(this.age-dec>=0)
             this.age-=dec
-        }
+        },
+
+      
     }
 })
 
 new Vue({
-    el:"#mouse-events",
+    el:"#events",
     data:{
         x:0,
         y:0
@@ -38,7 +40,10 @@ new Vue({
             this.x = event.offsetX;
             this.y = event.offsetY;
 
-        }
+        },
 
+        click:function(){
+            alert("link clicked")
+        }
     }
 })
