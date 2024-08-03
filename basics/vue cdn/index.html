@@ -17,6 +17,7 @@
         <h1>{{greet('afternoon')}}</h1>
         <p>Name : {{name}}</p>
         <p>Job : {{job}}</p>
+        <p>Age : {{age}}</p>
 
         <div>
             <h2>2. Data binding</h2>
@@ -24,15 +25,32 @@
             <p v-html="websiteTag"></p>
         </div>
 
-        <div>
+        <h2>3. Events</h2>
 
+        <div>
+            <h3>click event</h3>
+            <button v-on:click="add(1)">Add a year</button>
+            <button @click="subtract(1)">Subtract a year</button>
+            <button v-on:dblclick="add(10)">Add 10 year</button>
+            <button v-on:dblclick="subtract(10)">Subtract 10 year</button>
         </div>
+
 
     </div>
 
+    <div id="mouse-events">
+
+        <div>
+            <h3>mouse move event</h3>
+            <div id="canvas" v-on:mousemove="updateXY">{{x}},{{y}}</div>
+        </div>
+
+    </div>
+    
 
 
-    <script src="/app.js"></script>
+
+    <script src="app.js"></script>
 
 </body>
 
