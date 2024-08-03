@@ -33,7 +33,8 @@ new Vue({
     el:"#events",
     data:{
         x:0,
-        y:0
+        y:0,
+    
     },
     methods:{
         updateXY:function(event){
@@ -44,6 +45,14 @@ new Vue({
 
         click:function(){
             alert("link clicked")
+        },
+
+        logName:function(event){
+            console.log("you entered your name");
+        },
+        logAge: function(){
+            console.log("you entered your age");
+        
         }
     }
 })
