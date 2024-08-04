@@ -119,6 +119,38 @@
 
     </div>
 
+
+    <div id="instance4">
+
+        <div>
+            <h1>Looping with v-for</h1>
+            <ul>
+                <li v-for="(character,index) in characters">{{index}} . {{character}}</li>
+            </ul>
+
+            <ul>
+                <li v-for="(ninja,index) in ninjas">{{index}} . {{ninja.name}} - {{ninja.age}}</li>
+            </ul>
+           
+
+            <h3>With template tag</h3>
+
+            <template v-for="(ninja,index) in ninjas">
+                <p>{{index}}. {{ninja.name}} - {{ninja.age}}</p>
+            </template>
+
+
+            <h3> Iterating on objects</h3>
+
+            <template v-for="ninja in ninjas">
+
+                <div v-for="(val,key) in ninja">
+                    <p>  {{key}} - {{val}}</p>
+                </div>
+            </template>
+        </div>
+    </div>
+
     
     
 

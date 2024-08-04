@@ -106,3 +106,24 @@ new Vue({
 
     }
 })
+
+
+
+
+new Vue({
+    el:'#instance4',
+    data:{
+      characters:['Mario',"Luigi","Yoshi","browser"],
+      ninjas:[
+        {name:'Ryui',age:25},
+        {name:'Yoshi',age:35},
+        {name:'Ken',age:55}
+      ]
+    },
+
+    methods:{
+
+        
+    
+    }
+})
