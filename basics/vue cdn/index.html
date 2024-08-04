@@ -85,7 +85,6 @@
         </div>
 <br><br><br><br>
         <div>
-
             <h1> Dynamic CSS classes</h1>
             <h2>Example 1</h2>
             <div v-on:click="available=!available" v-bind:class="{available:available}">
@@ -102,9 +101,19 @@
                 <span id="text">Click Me</span>
 
             </div>
+        </div>
 
 
+        <div>
+            <h1> Conditionals</h1>
+            <button v-on:click="error=!error">Toggle Error</button>
+            <button v-on:click="success=!success">Toggle Success</button>
 
+            <p v-if="error"> using if , there is an error</p>
+            <p v-else-if="success">using if ,Success</p>
+
+            <p v-show="error">using show, There is an error</p> <!-- display will be set to non if show is false-->
+            <p v-show="success">using show ,Success</p>
 
         </div>
 
