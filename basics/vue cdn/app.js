@@ -34,6 +34,8 @@ new Vue({
     data:{
         x:0,
         y:0,
+        age:'',
+        name:''
     
     },
     methods:{
@@ -48,7 +50,7 @@ new Vue({
         },
 
         logName:function(event){
-            console.log("you entered your name");
+
         },
         logAge: function(){
             console.log("you entered your age");

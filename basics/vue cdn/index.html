@@ -47,12 +47,15 @@
 
 
         <div>
-            <h4>Keyboard events</h4>
+            <h4> 2 way data binding</h4>
             <label>Name: </label>
-            <input type="text" v-on:keyup="logName" name="" id="">
+            <input type="text" name="" id="" v-model="name">
+        
 
             <label>Age:</label>
-            <input type="text" v-on:keyup.enter="logAge" name="" id="">
+            <input type="text" name="" id="" v-model="age">
+
+            <span>Name : {{name}}, Age : {{age}}</span>
         </div>
 
 
