@@ -65,7 +65,10 @@ new Vue({
     data:{
         age:20,
         a:0,
-        b:0
+        b:0,
+
+        available:false,
+        nearby:false
     },
     methods:{
         // addToA:function(){
@@ -87,6 +90,15 @@ new Vue({
         addToB: function(){
             console.log("add to B")
             return this.b+this.age;
+        },
+
+        compClasses: function(){
+
+            return {
+                available:this.available,
+                nearby:this.nearby
+            }
+
         }
 
     }
