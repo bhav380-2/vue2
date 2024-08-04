@@ -20,3 +20,18 @@ new Vue ({
 new Vue({
     el:"#vue-app-two"
 })
+
+new Vue ({
+    el:"#vue-app-three",
+    data:{
+        output:''
+
+    },
+    methods:{
+        readRefs:function(){
+            this.output =  this.$refs.input.value;
+
+        }
+    }
+    
+})

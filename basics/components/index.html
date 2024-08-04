@@ -11,17 +11,40 @@
 
 <body>
 
-    <div id="vue-app-one">
-        <h2>Vue app one</h2>
-        <greeting></greeting>
+
+    <div>
+        <h1>Components</h1>
+        <div id="vue-app-one">
+            <h2>Vue app one</h2>
+            <greeting></greeting>
+        </div>
+    
+    
+        <div id="vue-app-two">
+    
+            <h2>Vue app two</h2>
+            <greeting></greeting>
+        </div>
     </div>
 
+    <div id="vue-app-three">
 
-    <div id="vue-app-two">
+        <div>
+            <h2>Refs</h2>
 
-        <h2>Vue app two</h2>
-        <greeting></greeting>
+            <input type="text" ref="input">
+            <button v-on:click="readRefs">Submit</button>
+            <p>Your fav food : {{output}}</p>
+    
+        </div>
+    
+
     </div>
+
+  
+ 
+
+
     
 
 
