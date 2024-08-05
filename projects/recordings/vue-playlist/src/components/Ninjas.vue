@@ -36,6 +36,35 @@
       }
     
     },
+    methods:{
+
+    },
+
+    //lifecycle hooks
+
+    beforeCreate(){
+      alert("beforeCreate");
+    },
+
+    created(){
+      alert("afterCreated");
+    },
+
+    beforeMount(){
+      alert('beforeMount');
+    },
+    mounted(){
+      alert('mounted')
+    },
+
+    beforeUpdate(){
+      alert("beforeupdate");
+    },
+
+    updated(){
+      alert("updated");
+    }
+
 
    
   
