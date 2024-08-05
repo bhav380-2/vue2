@@ -6,6 +6,8 @@
 
 <script>
 
+import {bus} from "../main"
+
 export default {
 
     props: {
@@ -24,7 +26,9 @@ export default {
     methods:{
         changeTitle: function(){
 
-            this.$emit("changeTitle",'Vue Wizards');
+            this.title = "Vue Wizards";
+            // this.$emit("changeTitle",'Vue Wizards');
+            bus.$emit("titleChanged","Vue Wizards");
 
         }
     }

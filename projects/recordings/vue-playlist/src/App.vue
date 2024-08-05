@@ -6,7 +6,7 @@
 
 
 
-    <app-footer></app-footer>
+    <app-footer v-bind:title="title"></app-footer>
   </div>
 
   
@@ -47,7 +47,7 @@ export default {
 
   methods:{
     updateTitle: function(newTitle){
-      this.title = newTitle
+      // this.title = newTitle
     }
   }
  
