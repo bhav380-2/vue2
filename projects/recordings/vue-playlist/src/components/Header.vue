@@ -23,7 +23,9 @@ export default {
     },
     methods:{
         changeTitle: function(){
-            this.title = " new "
+
+            this.$emit("changeTitle",'Vue Wizards');
+
         }
     }
 
