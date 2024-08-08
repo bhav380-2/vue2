@@ -19,6 +19,12 @@
             </div>
 
 
+            <label>Author : </label>
+            <select v-model="blog.author">
+                <option v-for="author in authors"> {{author}}</option>
+            </select>
+
+
 
         </form>
         <div id="preview">
@@ -33,6 +39,8 @@
                     {{ category }}
                 </li>
             </ul>
+
+            <p> Author : {{ blog.author }}</p>
         </div>
     </div>
 </template>
@@ -46,8 +54,10 @@ export default {
             blog: {
                 title: '',
                 content: '',
-                categories:[]
-            }
+                categories:[],
+                author:""
+            },
+            authors:['The Vue','The React','The Angular','The Redux']
         }
     },
     methods: {
