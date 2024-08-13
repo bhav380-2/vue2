@@ -41,7 +41,29 @@ export default {
                 return blog.title.match(this.search);
             })
         }
+    },
+    filters:{
+
+// _____technique 1_____
+        // 'to-uppercase':function(value){
+        //     return value.toUpperCase();
+        // }
+// _____technique 2 __neater__
+        toUppercase(value){
+            return value.toUpperCase();
+        }
+    },
+    
+    directives:{
+        'rainbow':{
+            bind(el,binding,vnode){
+                el.style.color = "#" + Math.random().toString(16).slice(2,8)
+            }
+        }
+
     }
+
+
 }
 </script>
   

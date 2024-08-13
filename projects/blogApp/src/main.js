@@ -8,18 +8,18 @@ Vue.use(VueResource);
 
 
 //custom directive
-Vue.directive('rainbow',{
-  bind(el,binding,vnode){
-    el.style.color= "#" + Math.random().toString().slice(2,8);
+// Vue.directive('rainbow',{
+//   bind(el,binding,vnode){
+//     el.style.color= "#" + Math.random().toString().slice(2,8);
 
-  }
-})
+//   }
+// })
 
 // filters
 
-Vue.filter('to-uppercase',function(value){
-  return value.toUpperCase();
-})
+// Vue.filter('to-uppercase',function(value){
+//   return value.toUpperCase();
+// })
 
 
 Vue.filter('snippet',function(value){
