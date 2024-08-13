@@ -6,6 +6,7 @@ import VueResource from 'vue-resource'
 
 Vue.use(VueResource);
 
+
 //custom directive
 Vue.directive('rainbow',{
   bind(el,binding,vnode){
@@ -13,6 +14,21 @@ Vue.directive('rainbow',{
 
   }
 })
+
+// filters
+
+Vue.filter('to-uppercase',function(value){
+  return value.toUpperCase();
+})
+
+
+Vue.filter('snippet',function(value){
+  return value.slice(0,100)+' ...';
+})
+
+
+
+
 
 new Vue({
   el: '#app',
