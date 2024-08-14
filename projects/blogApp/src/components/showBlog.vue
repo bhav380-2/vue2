@@ -12,7 +12,7 @@
 </template>
   
 <script>
-// Imports
+// Import
 
 import searchMixins from '../mixins/searchMixins';
 
